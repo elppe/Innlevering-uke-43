@@ -1,12 +1,24 @@
 <!doctype html>
 <html>
-
+//<!-- TODO: Leg til kommentarer -->
 <head>
 	<meta charset="utf-8">
 	<title>Kap.4</title>
 </head>
 
-<body bgcolor>
+<body>
+	<h2>Kapittel 4</h2>
+	<p>
+		Internett er et nettverk av nettverk. For at de forskjellige datamaskinene skal kunne bli koblet sammen må de bruke de samme «spille reglene» disse reglene kalles protokoller. Uten disse reglene kan ikke maskinene forstå hverandre.<br><br>
+
+		For å få et internett så må vi ha flere nettverk. Definasjonen på et nettverk er minimum 2 maskiner som er kobblet sammen. Når vi så kobler flere slike nettverk sammen, vil vi få internett.<br><br>
+
+		I internettet finnes det forskjellige typer brukere.  Det fins klienter som er de som bruker nettet. Også har du tjenere. Det er de som har informasjonen til nettsidene du ønsker å besøke. Vi har også noe som heter dns tjenere. Disse tjenerne lagrer informasjonen om hvordan man skal kobble seg til de andre tjenerene når vi skal for eksempel gå på facebook. De tar imot informasjonen du sender inn «facebook.com» også sender den tilbake ip addressen til denne serveren. Slik at du kan koble deg til denne serveren. Den har også litt informasjon om hva slags kode språk nettsiden bruker.<br><br>
+
+		I tillegg har vi noe som heter TCP. Dette er en protokoll som sier hvordan informasjonen mellom klienter og tjenere skal bli håndtert og sendt. For når klienter og tjenere snakker sammen blir det sendt pakker mellom dem. Er det snakk om mye informasjon vil pakkene som regel bli delt opp i flere mindre pakker. Da må alle pakkene inneholde informasjonen om hvordan de skal bli satt sammen igjen når de kommer tilbake til klienten. Slik at klienten kan få opp nettsiden og dens innhold på riktig måte. //<!-- TODO: skriv om HTTP og lokalhost -->
+	</p>
+
+
 	<p>Top 3 farger</p>
 	<ol>
 		<li>Rød</li>
@@ -48,14 +60,15 @@
 	</table>
 
 	<br>
-
-	<img src="Bilder/shep_valp.jpg" alt="Sjefer Valp" width="200" height="200">
-	<img src="Bilder/shep_familie.jpg" alt="Sjefer Familie" width="200" height="200">
-	<img src="Bilder/shep_voksen.png" alt="Voksen Sjefer" width="200" height="200">
-	<img src="" alt="" width="200" height="200">
+	<p>Noen bilder av Schæfere</p>
+	<img src="Bilder/shep_valp.jpg" alt="Sjefer Valp" width="300" height="300">
+	<img src="Bilder/shep_familie.jpg" alt="Sjefer Familie" width="300" height="300">
+	<img src="Bilder/shep_voksen.png" alt="Voksen Sjefer" width="300" height="300">
+	<img src="Bilder/filstruktur.png" alt="filstruktur"	width="300" height="300">
 
 	<br>
-	<video width="500" height="500" controls>
+	<p>Morsomme klipps av Schæfere</p>
+	<video width="700" height="500" controls>
 		<source src="Video/german_shep.mp4"	type="video/mp4">
 		Din nettleser støtter ikke video-elementet.
 	</video>
@@ -63,6 +76,16 @@
 	<br>
 
 	<a href="https://www.ntnu.no" target="_blank">NTNU</a>
+
+	<form method="GET">
+		<p>Ditt navn</p>
+		<input type="text" name="navn">
+		<p>Din favoritt hunderase</p>
+		<input type="text" name="hunderase">
+
+		<input type="submit" name="sendinn" value="Send inn">
+
+	</form>
 </body>
 
 </html>
